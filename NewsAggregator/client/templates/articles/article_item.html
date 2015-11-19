@@ -1,0 +1,28 @@
+<template name="articleItem">
+  <div class="row">
+    {{> articleCard}}
+    {{> trashCan}}
+  </div>
+</template>
+
+<template name="articleCard">
+  <div class="col s10">
+    <div class="card hoverable {{#if hasRepublicans}}{{#if hasDemocrats}}purple{{else}}red{{/if}}{{else}}blue{{/if}} lighten-4">
+      <div class="card-content">
+        <h5><a href="{{url}}" target="_blank" class="black-text">{{title}}</a></h5>
+        <p>{{description}}</p>
+        <span>{{published}}  ---- {{website}}</span>
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="trashCan">
+  <div class="col s2">
+    <div class="card hoverable">
+      <div class="card-content">
+        <img class="responsive-img" src="https://cdn1.iconfinder.com/data/icons/appicns/513/appicns_Trash_Full.png">
+      </div>
+    </div>
+  </div>
+</template>

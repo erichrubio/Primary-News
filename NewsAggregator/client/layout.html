@@ -1,0 +1,32 @@
+<template name="layout">
+  <div>
+    <div class="navbar-fixed">
+      <nav>
+        <div class="nav-wrapper">
+          <a class="brand-logo" href="/">News Articles</a>
+          <ul class="right hide-on-med-and-down">
+            <li>{{> jobCollectionTemplate}}</li>
+            <li>{{> addButtonTemplate}}</li>
+            <li>{{> articlesButtonTemplate}}</li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div id="main">
+      {{> yield}}
+    </div>
+  </div>
+</template>
+
+
+<template name="jobCollectionTemplate" class="waves-effect waves-light btn">
+  <button name="startJobsButton" class="waves-effect waves-light btn">Start Jobs</button>
+</template>
+
+<template name="addButtonTemplate" class="waves-effect waves-light btn">
+  <button name="addButton" class="waves-effect waves-light btn">Add</button>
+</template>
+
+<template name="articlesButtonTemplate" class="waves-effect waves-light btn">
+  <button name="articlesButton" class="waves-effect waves-light btn">Articles</button>
+</template>

@@ -1,0 +1,12 @@
+<template name="sourceCheckboxListTemplate">
+  {{#each sources}}
+    {{> sourceCheckboxTemplate}}
+  {{/each}}
+</template>
+
+<template name="sourceCheckboxTemplate">
+  <p>
+    <input type="checkbox" class="filled-in" id="filled-in-box" checked="checked" />
+    <label style="color: #fff" for="filled-in-box">{{website}}</label>
+  </p>
+</template>

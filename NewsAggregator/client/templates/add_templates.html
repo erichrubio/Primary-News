@@ -1,0 +1,38 @@
+<template name="addTemplate">
+  {{> rssUrlAddTemplate}}
+  {{> politicianAddTemplate}}
+</template>
+
+<template name="rssUrlAddTemplate">
+  <div class="card hoverable">
+    <div class="card-content">
+      <form class="main form page">
+        <h5>Add RSS url below</h5>
+        <input name="newRssUrl" type="text" placeholder="New url"/>
+        <input name="websiteName" type="text" placeholder="Website name"/>
+        <input type="submit" value="Submit" class="btn btn-primary"/>
+      </form>
+    </div>
+  </div>
+</template>
+
+<template name="politicianAddTemplate">
+  <div class="card hoverable">
+    <div class="card-content">
+      <form class="main form page">
+        <h5>Add politician below</h5>
+        <input name="politicianFirstName" type="text" placeholder="First name"/>
+        <input name="politicianLastName" type="text" placeholder="Last name"/>
+        <p>
+          <input name="party" type="radio" id="democrat" value="democrat"/>
+          <label for="democrat">Democrat</label>
+        </p>
+        <p>
+          <input name="party" type="radio" id="republican" value="republican"/>
+          <label for="republican">Republican</label>
+        </p>
+        <input type="submit" value="Submit" class="btn btn-primary"/>
+      </form>
+    </div>
+  </div>
+</template>
