@@ -1,3 +1,3 @@
 # Primary-News
 
-This is the backend portion of a web application developed using Meteor.
+This web application provides a News Aggregator that collects news articles relating to the 2016 primary elections. 
